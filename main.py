@@ -4,13 +4,13 @@ import datetime
 
 
 #file name
-x = pa.read_csv("./you_file_name.csv")
+x = pa.read_csv("./time_series_PL_20260206-2248_20260306-2248.csv")
 # print(x)
 time = x['Time'].str.split(' ',expand=True)
 
 
-se = x['first_column_name'].astype(str).str.split(' ', expand=True)
-print(se[0][2])
+se = x['korki'].astype(str).str.split(' ', expand=True)
+# print(se[0][2])
 
 s = {}
 co = {
