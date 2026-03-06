@@ -4,12 +4,12 @@ import datetime
 
 
 #file name
-x = pa.read_csv("./time_series_PL_20260206-2248_20260306-2248.csv")
+x = pa.read_csv("./your_file.csv")
 # print(x)
-time = x['Time'].str.split(' ',expand=True)
+time = x['first_column'].str.split(' ',expand=True) #string
 
 
-se = x['korki'].astype(str).str.split(' ', expand=True)
+se = x['second_column'].astype(str).str.split(' ', expand=True) #int
 # print(se[0][2])
 
 s = {}
